@@ -1,0 +1,30 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0wlofminerva/Natours.git"
+  },
+  "keywords": [
+    "Inpray1"
+  ],
+  "author": "Miguel Domínguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0wlofminerva/Natours/issues"
+  },
+  "homepage": "https://github.com/0wlofminerva/Natours#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^5.0.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0"
+  }
+}

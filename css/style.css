@@ -37,6 +37,8 @@ line-height: 1.7;
 color: #777;
 padding: 3rem;
 /* padding applied to the entire webpage */
+
+box-sizing: border-box;
 }
 
 /* this code performs a basic reset, and also a font weight definitions, in the body selector, it will be inherited in the child elements */
