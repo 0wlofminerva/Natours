@@ -8,14 +8,21 @@ Dark green: #28b485
 */
 
 /* The Universal selector select each & every elment in the page & apply this declaration to it */
-* {
+*,
+*::after,
+*::before {
     margin: 0; 
     padding: 0;
     /* Start clean without any default browser margings or paddings */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* Change the box model, so that the borders & the paddiings are no longer edited to the widtth or the totla height that are specified for a box
     so that without any paddings & borders are edited to the height & width of an element,
     helpful for getting rid of that behaviour */
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 /* Font properties for the entire website */
@@ -28,7 +35,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.7;
 color: #777;
-padding: 30px;
+padding: 3rem;
 /* padding applied to the entire webpage */
 }
 
@@ -53,14 +60,14 @@ padding: 30px;
 
 .logo-box{
 position: absolute;
-top: 40px; /**/
-left: 40px; /**/
+top: 4rem; /**/
+left: 4rem; /**/
 /* to put exactly the image where we want it to be, top, bottoom, left, right */
 /* the reference to start counting 40px to the top & left is the parent elment header with position relative */
 }
 
 .logo{
-height: 35px;
+height: 3.5rem;
 }
 
 /* .logo:hover {
@@ -81,7 +88,7 @@ color:#fff;
 text-transform: uppercase;
 
 backface-visibility: hidden;
-margin-bottom: 60px;
+margin-bottom: 6rem;
 }
 
 .heading-primary-main{
@@ -89,7 +96,7 @@ display:block;
 /* it creates line breaks after & before them */
 font-size: 60px;
 font-weight: 400;
-letter-spacing: 35px;
+letter-spacing: 3.5rem;
 
 animation-name: moveInLeft;
 animation-duration: 1s;
@@ -104,20 +111,20 @@ animation-timing-function: ease-out;
 
 .heading-primary-sub{
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
 
     100% {
@@ -129,11 +136,11 @@ animation-timing-function: ease-out;
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
 
     100% {
@@ -145,7 +152,7 @@ animation-timing-function: ease-out;
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
 
     100% {
@@ -158,22 +165,23 @@ animation-timing-function: ease-out;
 .btn:visited {
     text-transform:uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block; /* model-box works as a modal block */
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
 
 }
 
 .btn:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 }
 
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -186,7 +194,7 @@ animation-timing-function: ease-out;
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
