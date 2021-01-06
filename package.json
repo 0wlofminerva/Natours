@@ -19,7 +19,9 @@
     "url": "https://github.com/0wlofminerva/Natours/issues"
   },
   "homepage": "https://github.com/0wlofminerva/Natours#readme",
-  "dependencies": {},
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "css-loader": "^5.0.1",
